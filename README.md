@@ -1,10 +1,15 @@
 # MITRA SOPIR
 
-One Paragraph of project description goes here
 
-## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+## Halamannya
+
+[index.html](https://rudhos.github.io/mitra-sopir-app/index)
+[home.html](https://rudhos.github.io/mitra-sopir-app/home)
+[mitra-order.html](https://rudhos.github.io/mitra-sopir-app/mitra-order)
+[mitra-detail.html](https://rudhos.github.io/mitra-sopir-app/mitra-detail)
+[map.html](https://rudhos.github.io/mitra-sopir-app/map)
 
 ### Prerequisites
 
