@@ -9,7 +9,7 @@ Sidebar menune opo ae? cc Asrori, Chandra
 2. Halaman Mitra - [home.html](https://rudhos.github.io/mitra-sopir-app/home)
 3. Halaman Mitra Order - [mitra-order.html](https://rudhos.github.io/mitra-sopir-app/mitra-order)
 4. Halaman Mitra Order Detail - [mitra-detail.html](https://rudhos.github.io/mitra-sopir-app/mitra-detail)
-* 5. Halaman Map - [map.html](https://rudhos.github.io/mitra-sopir-app/map)
+5. Halaman Map - [map.html](https://rudhos.github.io/mitra-sopir-app/map)
 
 ### 1. Halaman Login 
 
@@ -21,22 +21,20 @@ Podo karo sing lawas
 
 ```
 <div class="box mitra-sopir">
-	
-	<!-- Looping -->
-    <div class="item">
+   <!-- Looping -->
+   <div class="item">
       <div class="mitra-date">29/12/2017</div>
       <div class="mitra-info">
-          REQUEST
-          <span>15 UNIT</span>
-          AVAILABLE
-          <span>15 UNIT</span>
-          CONTRIBUTION
-          <span>15 UNIT</span>
+         REQUEST
+         <span>15 UNIT</span>
+         AVAILABLE
+         <span>15 UNIT</span>
+         CONTRIBUTION
+         <span>15 UNIT</span>
       </div>
       <a href="mitra-detail.html" class="detail">OPEN</a>
-    </div>
-    <!-- End Looping -->
-
+   </div>
+   <!-- End Looping -->
 </div>
 ```
 
@@ -47,11 +45,11 @@ Podo karo sing lawas
 
 ```
 <div class="box no-order">
-	<p class="heading">Tidak Ada Order</p>
-	<img src="css/images/kosong.png" alt="">
-	<br><br>
-	<a href="map.html" class="btn btn-raised btn-lg btn-primary btn-login">CEK ORDER</a>
-	<div class="clearfix"></div>
+   <p class="heading">Tidak Ada Order</p>
+   <img src="css/images/kosong.png" alt="">
+   <br><br>
+   <a href="map.html" class="btn btn-raised btn-lg btn-primary btn-login">CEK ORDER</a>
+   <div class="clearfix"></div>
 </div>
 ```
 
@@ -61,12 +59,12 @@ Podo karo sing lawas
 
 ```
 <div class="content">
-	<div class="box tabel">
-		....
-	</div>
-	<div class="box tabel">
-		....
-	</div>
+   <div class="box tabel">
+      ....
+   </div>
+   <div class="box tabel">
+      ....
+   </div>
 </div>
 ```
 
