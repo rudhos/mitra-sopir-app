@@ -5,15 +5,15 @@ Sidebar menune opo ae? cc Asrori, Chandra
 
 ## Halamannya
 
-* 1. Halaman Login - [index.html](https://rudhos.github.io/mitra-sopir-app/index)
-* 2. Halaman Mitra - [home.html](https://rudhos.github.io/mitra-sopir-app/home)
-* 3. Halaman Mitra Order - [mitra-order.html](https://rudhos.github.io/mitra-sopir-app/mitra-order)
-* 4. Halaman Mitra Order Detail - [mitra-detail.html](https://rudhos.github.io/mitra-sopir-app/mitra-detail)
+1. Halaman Login - [index.html](https://rudhos.github.io/mitra-sopir-app/index)
+2. Halaman Mitra - [home.html](https://rudhos.github.io/mitra-sopir-app/home)
+3. Halaman Mitra Order - [mitra-order.html](https://rudhos.github.io/mitra-sopir-app/mitra-order)
+4. Halaman Mitra Order Detail - [mitra-detail.html](https://rudhos.github.io/mitra-sopir-app/mitra-detail)
 * 5. Halaman Map - [map.html](https://rudhos.github.io/mitra-sopir-app/map)
 
 ### 1. Halaman Login 
 
-Podo ae karo sing lawas
+Podo karo sing lawas
 
 ### 2. Halaman Mitra 
 
@@ -77,10 +77,11 @@ Podo ae karo sing lawas
 
 ```
 <div class="content">
-	<div class="map" id="maps"></div>
+  <div class="map" id="maps"></div>
 
-	<div class="mapket">
-	</div>
+  <div class="mapket">
+  ....
+  </div>
 </div>
 ```
 
