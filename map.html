@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MITRA SOPIR</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <!-- <script type="text/javascript" src="cordova.js"></script> -->
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-material-design.css">
+    <link rel="stylesheet" type="text/css" href="css/ripples.min.css">
+
+    <!-- Tambahan -->
+    <link rel="stylesheet" type="text/css" href="css/leaflet.css"/>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+<body>
+
+<div id="sidebar-nav" class="sidebar">
+  <div class="sidebar-scroll">
+    <div class="wrap-user">
+      <div class="user">
+        <img src="images/user.jpg" alt="" class="img-circle">
+        <div class="info">John doe</div>
+      </div>
+    </div>
+    <nav>
+      <ul class="nav">
+        <li><a href="order-received.html" class="btn btn-default">ORDER RECEIVED</a></li></li>
+          <li><a href="mitra-submission.html" class="btn btn-default">MITRA SUBMISSION</a></li></li>
+          <li><a href="shipment-progress.html" class="btn btn-default">SHIPMENT PROGRESS</a></li></li>
+          <li><a href="shipment-history.html" class="btn btn-default">SHIPMENT HISTORY</a></li></li>
+          <li><a href="javascript:void(0)" class="btn btn-default">LOGOUT</a></li></li>
+      </ul>       
+    </nav>
+  </div>
+</div>
+<div class="overlay"></div> 
+<!-- end menu sidebar -->
+
+<div class="header">
+  <div class="container-fluid">
+    <div class="page-title"></div>
+    <a href="#" class="btn btn-header btn-left"><i class="ic icon-enav-30"></i> MITRA</a>
+    <!-- <a href="#" class="btn btn-header btn-right"><i class="ic icon-enav-1"></i> ORDER</a> -->
+  </div>
+</div>
+<div class="wrap-content content-scroll">
+<!-- <div class="wrap-content"> -->
+  <div class="container-fluid">
+    <div class="content">
+
+      <div class="map" id="maps"></div>
+
+      <div class="mapket">
+
+        <div class="box tabel">
+          <div class="row header text-center">
+            <div class="col-xs-12"><strong>TANGGAL PENGIRIMAN:</strong> 12/09/2017</div>
+          </div>
+          <div class="row text-center">
+            <div class="col-xs-6">Lokasi Muat<div class="title">Surabaya</div></div>
+            <div class="col-xs-6">Lokasi Bongkar<div class="title">Probolinggo</div></div>
+          </div>
+
+        </div>
+      
+        <div class="box single ket-peta">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="no">1</div>
+                <div class="meta">
+                  12/09/2017 | 10:30
+                  <span>PROBOLINGGO</span>
+                </div>
+                <div class="meta note">
+                    NOTE
+                  <span>ISI BENSIN</span>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="text-center">
+          <a href="javascript:void(0)" class="btn btn-raised btn-lg btn-primary btn-login" data-toggle="modal" data-target="#myModal">CHECK IN</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade modalp" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">CHECK IN</h4>
+      </div>
+      <div class="modal-body">
+        <form action="#">
+          <div class="form-group normal is-empty">
+            <label class="control-label" for="text1">Lokasi</label>
+            <input type="text" class="form-control" id="text2">
+          </div>
+          <div class="form-group normal is-empty selek">
+            <label class="control-label" for="select1">Status</label>
+            <select id="select1" class="form-control">
+              <option>Dalam Perjalanan</option>
+              <option>Open</option>
+              <option>Process</option>
+              <option>On Going</option>
+              <option>Done</option>
+            </select>
+          </div>
+          <div class="form-group normal is-empty">
+            <label class="control-label" for="text2">Keterangan</label>
+            <input type="text" class="form-control" id="text2">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer text-center">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">BATAL</button>
+        <button type="button" class="btn btn-primary">KIRIM</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/material.min.js"></script>
+  <script type="text/javascript" src="js/ripples.min.js"></script>
+
+  <!-- leafmap -->
+  <script type="text/javascript" src="js/leaflet.js"></script>
+  <script type="text/javascript" src="js/leaflet.ajax.min.js"></script>
+
+
+  <script type="text/javascript" src="js/global.js"></script>
+
+
+  <script>
+    $.material.init();
+
+    var mymap = L.map('maps').setView([-7.242883, 112.7211714], 13);
+
+L.tileLayer('https://api.mapbox.com/styles/v1/arieswdd/cj89yknij5tvj2snqxxldvxra/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYXJpZXN3ZGQiLCJhIjoiY2o2djFlenhhMHh2MzJxbW43NmEwNmZtZCJ9.ZC-jO1LlC-53Yr3hhoSQ1A', {
+            maxZoom: 18,
+            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+            '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+            id: 'mapbox.streets'
+            }).addTo(mymap);
+
+
+  </script>
+
+</body>
+</html>

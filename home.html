@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MITRA SOPIR</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <!-- <script type="text/javascript" src="cordova.js"></script> -->
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-material-design.css">
+    <link rel="stylesheet" type="text/css" href="css/ripples.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+<body>
+
+<div id="sidebar-nav" class="sidebar">
+  <div class="sidebar-scroll">
+    <div class="wrap-user">
+      <div class="user">
+        <img src="images/user.jpg" alt="" class="img-circle">
+        <div class="info">John doe</div>
+      </div>
+    </div>
+    <nav>
+      <ul class="nav">
+         <li><a href="order-received.html" class="btn btn-default">ORDER RECEIVED</a></li></li>
+          <li><a href="mitra-submission.html" class="btn btn-default">MITRA SUBMISSION</a></li></li>
+          <li><a href="shipment-progress.html" class="btn btn-default">SHIPMENT PROGRESS</a></li></li>
+          <li><a href="shipment-history.html" class="btn btn-default">SHIPMENT HISTORY</a></li></li>
+          <li><a href="javascript:void(0)" class="btn btn-default">LOGOUT</a></li></li>
+      </ul>       
+    </nav>
+  </div>
+</div>
+<!-- end menu sidebar -->
+<div class="ssm-overlay ssm-toggle-nav"></div>
+
+<div class="header">
+  <div class="container-fluid">
+    <div class="page-title"></div>
+    <a href="#" class="btn btn-header btn-left"><i class="ic icon-enav-30"></i> MITRA</a>
+    <!-- <a href="#" class="btn btn-header btn-right"><i class="ic icon-enav-1"></i> ORDER</a> -->
+  </div>
+</div>
+<div class="wrap-content content-scroll">
+  <div class="container-fluid">
+    <div class="content">
+
+      <div class="box mitra-sopir">
+
+        <div class="item">
+          <div class="mitra-date">29/12/2017</div>
+          <div class="mitra-info">
+              REQUEST
+              <span>15 UNIT</span>
+              AVAILABLE
+              <span>15 UNIT</span>
+              CONTRIBUTION
+              <span>15 UNIT</span>
+          </div>
+          <a href="mitra-detail.html" class="detail">OPEN</a>
+        </div>
+
+        <div class="item">
+          <div class="mitra-date">29/12/2017</div>
+          <div class="mitra-info">
+              REQUEST
+              <span>15 UNIT</span>
+              AVAILABLE
+              <span>15 UNIT</span>
+              CONTRIBUTION
+              <span>15 UNIT</span>
+          </div>
+          <a href="mitra-detail.html" class="detail">PROCESS</a>
+        </div>
+
+        <div class="item">
+          <div class="mitra-date">29/12/2017</div>
+          <div class="mitra-info">
+              REQUEST
+              <span>15 UNIT</span>
+              AVAILABLE
+              <span>15 UNIT</span>
+              CONTRIBUTION
+              <span>15 UNIT</span>
+          </div>
+          <a href="mitra-detail.html" class="detail">ON GOING</a>
+        </div>
+
+        <div class="item">
+          <div class="mitra-date">29/12/2017</div>
+          <div class="mitra-info">
+              REQUEST
+              <span>15 UNIT</span>
+              AVAILABLE
+              <span>15 UNIT</span>
+              CONTRIBUTION
+              <span>15 UNIT</span>
+          </div>
+          <a href="mitra-detail.html" class="detail complete">DONE</a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade modalp" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">ADD UNIT</h4>
+      </div>
+      <div class="modal-body">
+        <form action="#">
+          <div class="form-group normal is-empty">
+            <label class="control-label" for="text1">Unit</label>
+            <input type="text" class="form-control" id="text2">
+          </div>
+          <div class="form-group normal is-empty selek">
+            <label class="control-label" for="select1">Jenis</label>
+            <select id="select1" class="form-control">
+              <option>Engkol 1</option>
+              <option>Engkol 2</option>
+              <option>Engkol 3</option>
+              <option>Engkol 4</option>
+              <option>Engkol 5</option>
+            </select>
+          </div>
+          <div class="form-group normal is-empty">
+            <label class="control-label" for="text2">Sub Jenis</label>
+            <input type="text" class="form-control" id="text2">
+          </div>
+          <div class="row">
+            <div class="col-xs-6"><div class="form-group normal is-empty">
+            <label class="control-label" for="text3">Sub Jenis</label>
+            <input type="text" class="form-control" id="text3">
+          </div></div>
+            <div class="col-xs-6"><div class="form-group normal is-empty selek">
+            <label class="control-label" for="select2">Jenis</label>
+            <select id="select2" class="form-control">
+              <option>Ton</option>
+              <option>Ton</option>
+              <option>Ton</option>
+              <option>Ton</option>
+              <option>Ton</option>
+            </select>
+          </div></div>
+          </div>
+          <div class="form-group normal is-empty selek">
+            <label class="control-label" for="select3">Lokasi Muat</label>
+            <select id="select3" class="form-control">
+              <option>Surabaya</option>
+              <option>Surabaya</option>
+              <option>Surabaya</option>
+              <option>Surabaya</option>
+              <option>Surabaya</option>
+            </select>
+          </div>
+          <div class="form-group normal selek">
+            <label class="control-label" for="select4">Lokasi Bongkar</label>
+            <select id="select3" class="form-control">
+              <option>Banyuwangi</option>
+              <option>Banyuwangi</option>
+              <option>Banyuwangi</option>
+              <option>Banyuwangi</option>
+              <option>Banyuwangi</option>
+            </select>
+          </div>
+          <div class="form-group normal is-empty">
+            <label class="control-label" for="text5">Sub Total</label>
+            <input type="text" class="form-control" id="text5">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer text-center">
+        <button type="button" class="btn btn-primary">ADD</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/material.min.js"></script>
+  <script type="text/javascript" src="js/ripples.min.js"></script>
+
+  <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+  <script type="text/javascript" src="js/jquery.slideandswipe.min.js"></script>
+
+  <script type="text/javascript" src="js/global.js"></script>
+
+</body>
+</html>

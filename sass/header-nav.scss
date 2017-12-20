@@ -1,0 +1,56 @@
+/**
+ * 3. HEADER-NAV
+ * -----------------------------------------------------------------------------
+ */
+
+ .header{
+ 	height: $headerTinggi;
+ 	background-color: $color_1;
+ 	position: relative;
+ 	&.bg-transparant{
+ 		background-color: transparent;
+ 	}
+ }
+ .page-title{
+ 	text-align: center;
+ 	color: $white;
+ 	font-size: 18px;
+ 	font-weight: 500;
+ 	padding: 15px 10px;
+    margin: 10px 1px;
+ 	position: absolute;
+ 	top: 0;
+ 	left:0;
+ 	width: 100%;
+    margin: 10px 0px;
+    img{
+    	height: 40px;
+    }
+ }
+ .btn-header{
+ 	color: $white;
+ 	font-size: 18px;
+	font-weight: 500;
+	padding: 15px 10px;
+	display: inline-table;
+	vertical-align: middle;
+	/*background-color: $color_1;*/
+	background-color: transparent;
+	position: relative;
+	z-index: 2;
+	margin: 10px 0px;
+	&:not(.btn-raised){
+		color: $white;
+	}
+	&:hover{
+		background-color: darken($color_1, 10%);
+		color: $white;
+		text-decoration: none;
+	}
+ }
+.btn-left{
+	float: left;
+}
+.btn-right{
+	float: right;
+}
